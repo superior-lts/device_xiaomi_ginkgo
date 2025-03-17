@@ -375,9 +375,9 @@
     <ctl name="TX_DEC6 Volume" value="90" />
     <ctl name="TX_DEC7 Volume" value="90" />
 
-    <ctl name="ADC1 Volume" value="12" />
-    <ctl name="ADC2 Volume" value="12" />
-    <ctl name="ADC3 Volume" value="12" />
+    <ctl name="ADC1 Volume" value="19" />
+    <ctl name="ADC2 Volume" value="19" />
+    <ctl name="ADC3 Volume" value="19" />
 
     <!-- Compander controls -->
     <ctl name="WSA_COMP1 Switch" value="0" />
@@ -2760,7 +2760,7 @@
 
     <path name="headset-mic">
         <path name="amic2" />
-        <ctl name="TX_DEC0 Volume" value="84" />
+        <ctl name="TX_DEC0 Volume" value="90" />
     </path>
 
     <path name="voice-handset">
@@ -2932,7 +2932,7 @@
         <ctl name="TX_AIF2_CAP Mixer DEC2" value="1" />
         <ctl name="ADC2_MIXER Switch" value="1" />
         <ctl name="ADC2 MUX" value="INP3" />
-        <ctl name="ADC2 Volume" value="12" />
+        <ctl name="ADC2 Volume" value="16" />
     </path>
 
     <path name="asr-mic">
