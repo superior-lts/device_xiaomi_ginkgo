@@ -23,15 +23,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 # Inherit from ginkgo device
 $(call inherit-product, device/xiaomi/ginkgo/device.mk)
 
-# Inherit some common ConquerOS stuff
-CONQUER_BUILD_TYPE := OFFICIAL
-TARGET_USE_GAPPS := true
-TARGET_BOOT_ANIMATION_RES := 1080
-TARGET_INCLUDE_PIXEL_CHARGER := true
-$(call inherit-product, vendor/conquer/config/common.mk)
+# Inherit some common XdroidCLO stuff
+$(call inherit-product, vendor/xdroid/config/common.mk)
+XDROID_BOOT_DARK := true
+XDROID_UI_BLUR := true
 
 # Device identifier
-PRODUCT_NAME := conquer_ginkgo
+PRODUCT_NAME := xdroid_ginkgo
 PRODUCT_DEVICE := ginkgo
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 8

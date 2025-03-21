@@ -8,9 +8,6 @@
 # Vendor blobs
 $(call inherit-product, vendor/xiaomi/ginkgo/ginkgo-vendor.mk)
 
-# Setup dalvik vm configs
-$(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
-
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
@@ -96,7 +93,7 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/component-overrides_qti.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/sysconfig/component-overrides.xml
 
 # Camera
-$(call inherit-product, vendor/miuicamera/config.mk)
+$(call inherit-product-if-exists, vendor/miuicamera/config.mk)
 
 PRODUCT_PACKAGES += \
     android.frameworks.displayservice@1.0 \
